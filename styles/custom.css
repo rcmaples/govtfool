@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  height: 60px;
+  background: rgb(11, 97, 196);
+  color: white;
+  box-shadow: 0px 2px 4px #333333;
+  overflow: hidden;
+}
+
+header > img {
+  height: 50px;
+  position: relative;
+  top: 0.4rem;
+  left: 1rem;
+}
+
+header > h4 {
+  position: relative;
+  top: -4.5rem;
+  left: 6.5rem;
+}
+
+main {
+  margin: 1rem;
+}
+
+form > input {
+  width: 100%;
+}
+form > button {
+  float: right;
+}
