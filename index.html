@@ -17,6 +17,10 @@
     />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=***REMOVED***&libraries=places"
+    ></script>
 
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -31,17 +35,33 @@
     </header>
     <main>
       <div class="container">
-        <div class="row">
-          <div class="six columns">
-            <form>
-              <input type="text" />
-              <button type="submit">Submit</button>
-            </form>
+        <form>
+          <div class="row">
+            <label for="address">Enter your address</label>
+            <input
+              class="u-full-width"
+              type="text"
+              placeholder="123 Birdie St"
+              id="address"
+              name="address"
+            />
           </div>
-        </div>
+          <input class="button-primary" type="submit" value="Submit" />
+        </form>
       </div>
     </main>
     <footer></footer>
-    <script src="js/app.js"></script>
+    <script src="js/scratch.js"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+
+      $(function () {
+        var autocomplete = new google.maps.places.Autocomplete(
+          document.getElementById('address'),
+          { types: ['address'] }
+        );
+      });
+      //]]>
+    </script>
   </body>
 </html>

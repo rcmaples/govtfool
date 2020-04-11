@@ -324,12 +324,12 @@ const coalesceInfo = (
     });
   }
 
-  $('.container').html(`
-    <h1>${officeName}</h1>
+  $('.container').append(`
+    <h4>${officeName}</h4>
     <p>${name} - ${party}</p>
-    <img src=${photoUrl} width="200px" />
+    <img src="${photoUrl}" width="200px" alt="${name}"/>
     <p>
-    <a href="https://www.twitter.com/${twitter[0].id}">Twitter</a>
+
     <a href="${urls[0]}">Website</a>
     </p>
 
