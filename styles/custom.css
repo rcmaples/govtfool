@@ -33,3 +33,19 @@ form > input {
 form > button {
   float: right;
 }
+
+.card {
+  display: inline-block;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid black;
+  padding: 1rem;
+  margin: 1rem 2rem;
+  border-radius: 5px;
+  width: 40%;
+}
+
+.card img {
+  margin: 0 auto;
+}
