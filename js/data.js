@@ -1,4 +1,4 @@
-export const data = {
+const data = {
   kind: 'civicinfo#representativeInfoResponse',
   normalizedInput: {
     line1: '36 Warren Street Northeast',
