@@ -49,7 +49,7 @@ const coalesceInfo = (
     ` +
       (!!photoUrl
         ? `<img src="${photoUrl}" width="200px" alt="${name}"/>`
-        : `<img src="../assets/no_photo.jpg" width="200px" alt="${name}"/>`) +
+        : `<img src="./assets/no_photo.jpg" width="200px" alt="${name}"/>`) +
       '<p>' +
       (!!twitter
         ? `<a href="https://twitter.com/${twitter}" target="_blank" rel="noopener noreferrer">Twitter</a>`
