@@ -1,6 +1,6 @@
 // Dump the Division Keys to array for mapping
 'use strict';
-const KEY = '***REMOVED***';
+const KEY = '**REMOVED**';
 
 const API_URL = 'https://www.googleapis.com/civicinfo/v2/representatives';
 
